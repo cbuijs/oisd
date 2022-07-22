@@ -1,0 +1,26 @@
+Optimized version of OISD BlockLists
+
+See original version here: https://oisd.nl/
+
+Optimizations:
+
+- Unduplicate and make domains inclusive of subdomains (remove redundant sub-domains)
+- Make all domains lower-case
+- Split IP-Addresses off into their own file (domains.ips)
+- Filter out invalid (syntax) domains (domains.invalid)
+- Filter out domains with non-existing IANA TLD (domains.invalid)
+- Point out weird syntax domains (domains.weird)
+- Remove empty files
+
+Lists used:
+
+Basic	https://dbl.oisd.nl/basic/
+Full	https://dbl.oisd.nl/
+NSFW	https://dbl.oisd.nl/nsfw/
+Extra	https://dbl.oisd.nl/extra/
+
+Where original files are modified they are backupped/retained and given the .original file-name extension.
+
+
+NOTE: I do NOT maintain these lists and/or their content, for questions/problems/etc, please contact the original maintainer here: contact@oisd.nl or go to https://oisd.nl/contact.
+
