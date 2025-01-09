@@ -1,0 +1,30 @@
+Optimized version of OISD BlockLists
+
+See original version here: https://oisd.nl/
+
+Optimizations:
+
+- Unduplicate and make domains inclusive of subdomains (remove redundant sub-domains)
+- Make all domains lower-case
+- Split IP-Addresses off into their own file (domains.ips)
+- Filter out invalid (syntax) domains (domains.invalid)
+- Filter out domains with non-existing IANA TLD (domains.invalid)
+- Point out weird syntax domains (domains.weird)
+- Suggested excludes (domains.exclude)
+- Safe list, suggested excludes removed (domains.safe)
+- Domains actually used according TOP-N lists (domains.top-n)
+- Remove empty files
+- All files ending in .routedns are in RouteDNS domains format
+- All files ending in .rpz are in Response Policy Zone (RPZ) format
+
+Lists used:
+
+Small   https://raw.githubusercontent.com/sjhgvr/oisd/main/domainswild2_small.txt
+Big     https://raw.githubusercontent.com/sjhgvr/oisd/main/domainswild2_big.txt
+NSFW    https://raw.githubusercontent.com/sjhgvr/oisd/main/domainswild2_nsfw.txt
+
+Where original files are modified they are backupped/retained and given the .original file-name extension.
+
+
+NOTE: I do NOT maintain these lists and/or their content, for questions/problems/etc, please contact the original maintainer here: contact@oisd.nl or go to https://oisd.nl/contact.
+
